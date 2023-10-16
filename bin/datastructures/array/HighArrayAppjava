@@ -1,0 +1,16 @@
+package datastructures.array;
+
+class HighArray {
+private long[] a;
+private int nElems;
+
+public HighArray(int max){
+ a= new long[max];
+ nElems =0;
+}
+}
+
+
+class HighArrayApp {
+
+}
