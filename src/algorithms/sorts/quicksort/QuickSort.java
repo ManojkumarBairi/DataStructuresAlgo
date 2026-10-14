@@ -23,18 +23,6 @@ public class QuickSort {
         return swapIndex;
     }
 
-//    public static void quickSort(int[] array, int left, int right) {
-//        if (left >= right) return;
-//
-//        int pivotIndex = pivot(array, left, right);
-//        quickSort(array, left, pivotIndex-1);
-//        quickSort(array, pivotIndex+1, right);
-//    }
-//
-//    public static void quickSort(int[] array) {
-//        quickSort(array, 0, array.length-1);
-//    }
-
     private static void quickSortHelper(int[] array, int left, int right) {
         if (left < right) {
             int pivotIndex = pivot(array, left, right);
@@ -64,6 +52,19 @@ public class QuickSort {
             ----------------
             Returned Index: 3
             [2, 1, 3, 4, 6, 7, 5]
+
+         */
+
+        int[] arrayToSort = {4,6,1,7,3,2,5};
+
+        quickSort(arrayToSort);
+
+        System.out.println( "\nSorted: " + Arrays.toString( arrayToSort ) );
+
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            Sorted: [1, 2, 3, 4, 5, 6, 7]
 
          */
 
